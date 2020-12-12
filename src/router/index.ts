@@ -1,13 +1,23 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import IndexPage from "../views/index.vue";
+import Index from "../views/index.vue";
+import Search from "../views/search.vue";
+import ArticlesId from "../views/articles/_id.vue";
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
     path: "/",
-    component: IndexPage
+    component: Index
+  },
+  {
+    path: "/search",
+    component: Search
+  },
+  {
+    path: "/articles/:id",
+    component: ArticlesId
   }
 ];
 

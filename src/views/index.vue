@@ -1,18 +1,24 @@
 <template>
-  <div>
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div class="index">
+    <section class="hero is-light is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">wiki-practice</h1>
+          <SearchForm class="has-addons-centered" />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import SearchForm from "@/components/SearchForm.vue";
 
 @Component({
   components: {
-    HelloWorld
+    SearchForm
   }
 })
-export default class IndexPage extends Vue {}
+export default class Index extends Vue {}
 </script>
