@@ -11,7 +11,7 @@
           />
         </span>
         <span class="navbar__title">
-          wiki-practice
+          wiki-vue-typescript-practice
         </span>
       </router-link>
       <div v-if="isSearchFormShown" class="navbar-item">

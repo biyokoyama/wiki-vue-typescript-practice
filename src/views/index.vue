@@ -3,7 +3,7 @@
     <section class="hero is-light is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title">wiki-practice</h1>
+          <h1 class="title">wiki-vue-typescript-practice</h1>
           <SearchForm class="has-addons-centered" />
         </div>
       </div>

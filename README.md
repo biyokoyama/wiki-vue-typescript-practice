@@ -1,4 +1,4 @@
-# wiki-practice
+# wiki-vue-typescript-practice
 
 ## Project setup
 ```
