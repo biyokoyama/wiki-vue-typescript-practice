@@ -15,6 +15,7 @@ jobs:
           node-version: '12.x'
       - run: yarn install --frozen-lockfile
       - run: yarn build:gh-pages
+      - run: cp dist/index.html dist/404.html
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
