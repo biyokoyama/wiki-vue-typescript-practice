@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "axios-mock-server -b && vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:gh-pages": "axios-mock-server -b && VUE_APP_IS_GH_PAGES=1 vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
