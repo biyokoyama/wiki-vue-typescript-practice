@@ -10,12 +10,9 @@
             height="24"
           />
         </span>
-        <span class="navbar__title">
-          wiki-vue-typescript-practice
-        </span>
       </router-link>
       <div v-if="isSearchFormShown" class="navbar-item">
-        <SearchForm />
+        <SearchForm class="navbar__search-form" />
       </div>
     </div>
   </nav>
@@ -41,6 +38,9 @@ export default class Navbar extends Vue {
 .navbar {
   &__title {
     margin-left: 1rem;
+  }
+  &__search-form {
+    width: 90%;
   }
 }
 </style>
