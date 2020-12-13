@@ -1,7 +1,11 @@
 <template>
   <div class="field has-addons">
     <div class="control">
-      <input class="input" v-model="formData.query" @keydown.enter="doSearch" />
+      <input
+        class="input"
+        v-model="formData.query"
+        @keypress.enter="doSearch"
+      />
     </div>
     <div class="control">
       <button class="button is-primary" @click="doSearch">Search</button>
