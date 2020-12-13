@@ -55,7 +55,7 @@ export default class ArticlesId extends Vue {
           this.$router.push("/");
           break;
         default:
-          throw error;
+          console.error(error.message);
       }
     }
   }
