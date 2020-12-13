@@ -24,3 +24,6 @@ pnpm-debug.log*
 
 # axios-mock-server
 $mock.js
+
+# jest
+/coverage
