@@ -11,8 +11,11 @@
           />
         </span>
       </router-link>
-      <div v-if="isSearchFormShown" class="navbar-item">
-        <SearchForm class="navbar__search-form" />
+      <div
+        v-if="isSearchFormShown"
+        class="navbar__item-search-form navbar-item"
+      >
+        <SearchForm />
       </div>
     </div>
   </nav>
@@ -39,8 +42,8 @@ export default class Navbar extends Vue {
   &__title {
     margin-left: 1rem;
   }
-  &__search-form {
-    width: 90%;
+  &__item-search-form {
+    width: 85%;
   }
 }
 </style>
